@@ -1,0 +1,41 @@
+CREATE TABLE `booking` (
+  `booking_id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) DEFAULT NULL,
+  `nic_number` varchar(45) DEFAULT NULL,
+  `booking_type` varchar(45) DEFAULT NULL,
+  `booking_date` varchar(45) DEFAULT NULL,
+  `vacant_id_number` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`booking_id`)
+)
+
+
+
+CREATE TABLE `feedback` (
+  `feedback_id` int NOT NULL AUTO_INCREMENT,
+  `feedback` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`feedback_id`)
+)
+
+
+
+CREATE TABLE `mytable` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) DEFAULT NULL,
+  `password` varchar(45) DEFAULT NULL,
+  `phone` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)
+
+
+
+CREATE TABLE `vacancies` (
+  `vacancies_id` int NOT NULL AUTO_INCREMENT,
+  `vacancies_type` varchar(45) DEFAULT NULL,
+  `price` varchar(45) DEFAULT NULL,
+  `available` varchar(45) DEFAULT NULL,
+  `location` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`vacancies_id`)
+)
